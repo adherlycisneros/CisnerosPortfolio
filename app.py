@@ -10,8 +10,8 @@ app.config['MAIL_USERNAME'] = 'cisnerosprojects@outlook.com'
 app.config['MAIL_PASSWORD'] = 'toetvyvyaujztkom'
 mail = Mail(app)
 
-@app.route('/home', methods=['GET', 'POST'])
-def home():
+@app.route('/', methods=['GET', 'POST'])
+def index():
     if request.method == 'POST':
 
         name = request.form['name']
@@ -23,8 +23,8 @@ def home():
         msg.body = f"From: {name} \nEmail: {email} \n\n{message}"
         mail.send(msg)
 
-        return render_template('home.html', success=True) 
-    return render_template('home.html')
+        return render_template('index.html', success=True) 
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
