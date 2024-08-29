@@ -7,6 +7,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 - [About the Project](#about-the-project)
 - [Built With](#built-with)
 - [Features](#features)
+- [License](#license)
 
 ## About the Project
 
