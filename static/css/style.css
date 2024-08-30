@@ -450,7 +450,13 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-
+@media (min-width: 768px) {
+  .portfolio-container .portfolio-item:nth-child(3) {
+    position: absolute !important; /* Reset any absolute positioning */
+    left: 25% !important; /* Center horizontally */
+    margin: 0 auto !important; /* Center align in the container */
+  }
+}
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -501,8 +507,8 @@ section {
   position: absolute;
   top: 35px;
   left: 35px;
-  border-top: 3px solid #d7dce1;
-  border-left: 3px solid #d7dce1;
+  border-top: 3px solid #000000;
+  border-left: 3px solid #000000;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -515,8 +521,8 @@ section {
   position: absolute;
   bottom: 35px;
   right: 35px;
-  border-bottom: 3px solid #d7dce1;
-  border-right: 3px solid #d7dce1;
+  border-bottom: 3px solid #000000;
+  border-right: 3px solid #000000;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -531,7 +537,7 @@ section {
   color: #1d171c;
   font-size: 14px;
   padding: 0;
-  margin: 0;
+  margin: 0 50px;
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -561,6 +567,7 @@ section {
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
+  background-color: #fffdfd7a;
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info::before {
@@ -576,10 +583,6 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
 .tools-used {
   width: 80%;
   font-size: 1rem;
@@ -592,8 +595,8 @@ section {
 
 .tools-used li {
   list-style: none;
-  background-color: #e3e3e3;
-  color: #1d171c;
+  background-color: #00000098;
+  color: #ffffff;
   padding: 5px 10px;
   margin: 5px;
   width: auto;
