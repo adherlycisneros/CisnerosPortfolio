@@ -451,10 +451,19 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 @media (min-width: 768px) {
+  .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the items horizontally */
+  }
+
+  .portfolio-container .portfolio-item {
+    flex: 0 0 calc(50% - 15px); /* 50% width minus margin/gap adjustment */
+    margin-bottom: 30px;
+  }
+
   .portfolio-container .portfolio-item:nth-child(3) {
-    position: absolute !important; /* Reset any absolute positioning */
-    left: 25% !important; /* Center horizontally */
-    margin: 0 auto !important; /* Center align in the container */
+    margin-left: 25%; /* Adjust margin to center the third item */
   }
 }
 
@@ -497,6 +506,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 15px; /* Ensure content fits within the container */
+  overflow: hidden; /* Prevent content from overflowing */
 }
 
 .portfolio .portfolio-wrap .portfolio-info::before {
@@ -528,16 +539,17 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 2.5vw; /* Responsive font size for larger screens */
   color: #1d171c;
   font-weight: 600;
+  margin-bottom: 10px; /* Space between elements */
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #1d171c;
-  font-size: 14px;
+  font-size: 1.5vw; /* Responsive font size for larger screens */
   padding: 0;
-  margin: 0 50px;
+  margin: 0 10%; /* Adjust margin to fit content well */
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -548,7 +560,7 @@ section {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #1d171c;
   margin: 0 2px;
-  font-size: 28px;
+  font-size: 2vw; /* Responsive font size for larger screens */
   display: inline-block;
   transition: 0.3s;
 }
@@ -567,7 +579,8 @@ section {
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
-  background-color: #fffdfd7a;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px; /* Adjust padding for hover state */
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info::before {
@@ -585,8 +598,8 @@ section {
 --------------------------------------------------------------*/
 .tools-used {
   width: 80%;
-  font-size: 1rem;
-  margin: 20px auto 0 auto;
+  font-size: 1.2vw; /* Responsive font size for larger screens */
+  margin: 10px auto 10px auto;
   padding: 5px 0;
   display: flex;
   flex-wrap: wrap;
@@ -602,6 +615,36 @@ section {
   width: auto;
   border-radius: 50px;
 }
+
+/* Responsive Adjustments for Smaller Devices */
+@media (max-width: 767px) {
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 5vw; /* Adjusted font size for smaller screens */
+  }
+
+  .portfolio .portfolio-wrap .portfolio-info p {
+    font-size: 4vw; /* Adjusted font size for smaller screens */
+  }
+
+  .portfolio .portfolio-wrap .portfolio-links {
+    margin-top: 5px; /* Reduced margin to tighten spacing */
+  }
+
+  .portfolio .portfolio-wrap .portfolio-links a {
+    font-size: 5vw; /* Increase font size for links on smaller screens */
+  }
+
+  .tools-used {
+    font-size: 3.5vw; /* Adjusted font size for tools-used list */
+    margin: 5px auto 0 auto; /* Reduced top margin */
+  }
+
+  .tools-used li {
+    padding: 3px 8px; /* Reduced padding for smaller devices */
+    font-size: 3.8vw; /* Adjusted font size for list items */
+  }
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
