@@ -14,8 +14,6 @@
 **\*.sqlite3
 **\*.log
 
-
-
 # IDE files
 **\.vscode
 **\*.code-workspace
@@ -31,7 +29,7 @@
 **\yarn.lock
 
 # Compiled static files
-static/scss/
+**\static\scss
 
 # Miscellaneous
 **\*.bak
