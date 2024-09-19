@@ -19,5 +19,3 @@ primary_region = 'ewr'
   cpu_kind = 'shared'
   cpus = 1
 
-[build]
-  builder = "paketobuildpacks/builder:base"
