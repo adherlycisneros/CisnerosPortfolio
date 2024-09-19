@@ -1,42 +1,42 @@
 # flyctl launch added from .gitignore
 # Environment files
-**\*.env
+**/*.env
 
 # Python files
-**\__pycache__
-**\*.py[cod]
-**\*.pyo
-**\*.pyd
+**/__pycache__
+**/*.py[cod]
+**/*.pyo
+**/*.pyd
 
 # Flask specific files
-**\instance
-**\*.db
-**\*.sqlite3
-**\*.log
+**/instance
+**/*.db
+**/*.sqlite3
+**/*.log
 
 # IDE files
-**\.vscode
-**\*.code-workspace
+**/.vscode
+**/*.code-workspace
 
 # OS files
-**\.DS_Store
-**\Thumbs.db
-**\desktop.ini
+**/.DS_Store
+**/Thumbs.db
+**/desktop.ini
 
 # Node.js
-**\node_modules
-**\package-lock.json
-**\yarn.lock
+**/node_modules
+**/package-lock.json
+**/yarn.lock
 
 # Compiled static files
-**\static\scss
+**/static/scss
 
 # Miscellaneous
-**\*.bak
-**\*.swp
-**\*.tmp
-**\*.log
-**\*.out
+**/*.bak
+**/*.swp
+**/*.tmp
+**/*.log
+**/*.out
 
 # Vendor/Third-party libraries
 fly.toml
