@@ -13,9 +13,6 @@ instance/
 *.sqlite3
 *.log
 
-# Vendor/Third-party libraries
-static/vendor/
-
 # IDE files
 .vscode/
 *.code-workspace
@@ -33,16 +30,9 @@ yarn.lock
 # Compiled static files
 static/scss/
 
-
-# Images or large media files
-static/img/
-
 # Miscellaneous
 *.bak
 *.swp
 *.tmp
 *.log
 *.out
-
-# Vendor/Third-party libraries
-static/vendor/
